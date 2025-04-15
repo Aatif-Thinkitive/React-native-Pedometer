@@ -29,6 +29,8 @@ class PedometerModule(private val reactContext: ReactApplicationContext) :
         }
     }
 
+
+
     @ReactMethod
     fun stopStepService() {
         val serviceIntent = Intent(reactContext, StepCounterService::class.java)
